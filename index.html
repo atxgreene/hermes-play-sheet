@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermes • Command &amp; Skill Play Sheet</title>
+    <title>Hermes • Command & Skill Play Sheet</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -49,7 +49,7 @@
                     <i class="fa-solid fa-circle text-emerald-500 text-[9px]"></i>
                     <span>v0.7.0+</span>
                 </div>
-                <div class="text-zinc-500 text-xs px-2">macOS • GitHub Pages</div>
+                <div class="text-zinc-500 text-xs px-2">macOS • iMessage</div>
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@
                 <span class="font-medium">QUICK REFERENCE</span>
             </div>
             <h1 class="font-display text-6xl tracking-tighter font-semibold">Command &amp; Skill<br>Play Sheet</h1>
-            <p class="mt-3 text-xl text-zinc-400 max-w-md">Click any skill name below for details</p>
+            <p class="mt-3 text-xl text-zinc-400 max-w-md">Click any skill for details</p>
         </div>
 
         <!-- Quick Start -->
@@ -89,7 +89,7 @@
             </div>
         </div>
 
-        <!-- Skills & Toolkits (Interactive) -->
+        <!-- Skills & Toolkits (Rich + Interactive) -->
         <div class="mb-10">
             <div class="flex items-center justify-between mb-4 px-1">
                 <div class="flex items-center gap-x-2">
@@ -114,6 +114,7 @@
                             <span onclick="showSkillModal('popular-web-designs', '54 ready-to-paste design systems (Stripe, Linear, Vercel, etc.)', 'Creative')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">popular-web-designs</span>
                             <span onclick="showSkillModal('ascii-art', 'ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.', 'Creative')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">ascii-art</span>
                             <span onclick="showSkillModal('excalidraw', 'Hand-drawn Excalidraw JSON diagrams.', 'Creative')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">excalidraw</span>
+                            <span onclick="showSkillModal('comfyui', 'Generate images, video, and audio with ComfyUI.', 'Creative')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">comfyui</span>
                         </div>
                     </div>
 
@@ -127,7 +128,7 @@
                             <span onclick="showSkillModal('llama-cpp', 'llama.cpp local GGUF inference + HF Hub model discovery.', 'MLOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">llama-cpp</span>
                             <span onclick="showSkillModal('huggingface-hub', 'HuggingFace hf CLI: search/download/upload models.', 'MLOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">huggingface-hub</span>
                             <span onclick="showSkillModal('unsloth', 'Unsloth: 2-5x faster LoRA/QLoRA fine-tuning.', 'MLOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">unsloth</span>
-                            <span onclick="showSkillModal('segment-anything-model', 'SAM: zero-shot image segmentation via points/boxes.', 'MLOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">segment-anything-model</span>
+                            <span onclick="showSkillModal('segment-anything-model', 'SAM: zero-shot image segmentation.', 'MLOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">segment-anything-model</span>
                         </div>
                     </div>
 
@@ -138,17 +139,57 @@
                             <span class="skill-pill bg-sky-950 text-sky-400">18</span>
                         </div>
                         <div class="flex flex-wrap gap-1.5 text-xs">
-                            <span onclick="showSkillModal('github', 'GitHub workflow skills: auth, repo management, PRs, issues.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">github</span>
-                            <span onclick="showSkillModal('linear', 'Linear: manage issues, projects, teams via GraphQL.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">linear</span>
-                            <span onclick="showSkillModal('kanban-orchestrator', 'Decomposition playbook + specialist-roster for Kanban.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">kanban-orchestrator</span>
-                            <span onclick="showSkillModal('notion', 'Notion API + ntn CLI for pages and databases.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">notion</span>
+                            <span onclick="showSkillModal('github', 'GitHub workflow skills: auth, repo, PRs, issues.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">github</span>
+                            <span onclick="showSkillModal('linear', 'Linear: manage issues, projects via GraphQL.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">linear</span>
+                            <span onclick="showSkillModal('kanban-orchestrator', 'Decomposition + specialist-roster for Kanban.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">kanban-orchestrator</span>
+                            <span onclick="showSkillModal('notion', 'Notion API + ntn CLI.', 'DevOps')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">notion</span>
+                        </div>
+                    </div>
+
+                    <!-- Research & Knowledge -->
+                    <div>
+                        <div class="flex items-center gap-x-2 mb-3">
+                            <span class="font-semibold text-emerald-400">Research &amp; Knowledge</span>
+                            <span class="skill-pill bg-emerald-950 text-emerald-400">8</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 text-xs">
+                            <span onclick="showSkillModal('arxiv', 'Search arXiv papers by keyword, author, category.', 'Research')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">arxiv</span>
+                            <span onclick="showSkillModal('polymarket', 'Query Polymarket: markets, prices, orderbooks.', 'Research')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">polymarket</span>
+                            <span onclick="showSkillModal('llm-wiki', 'Karpathy LLM Wiki: build/query interlinked markdown KB.', 'Research')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">llm-wiki</span>
+                        </div>
+                    </div>
+
+                    <!-- Apple / Social / Media -->
+                    <div>
+                        <div class="flex items-center gap-x-2 mb-3">
+                            <span class="font-semibold text-rose-400">Apple • Social • Media</span>
+                            <span class="skill-pill bg-rose-950 text-rose-400">9</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 text-xs">
+                            <span onclick="showSkillModal('apple', 'Unified Apple/macOS ecosystem skills.', 'Apple')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">apple</span>
+                            <span onclick="showSkillModal('telegram-desktop-automation', 'Drive Telegram Desktop on macOS.', 'Apple')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">telegram-desktop-automation</span>
+                            <span onclick="showSkillModal('xurl', 'X/Twitter via xurl CLI.', 'Social')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">xurl</span>
+                        </div>
+                    </div>
+
+                    <!-- Specialized -->
+                    <div>
+                        <div class="flex items-center gap-x-2 mb-3">
+                            <span class="font-semibold text-orange-400">Specialized</span>
+                            <span class="skill-pill bg-orange-950 text-orange-400">26</span>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 text-xs">
+                            <span onclick="showSkillModal('autonomous-ai-agents', 'Delegate coding tasks to autonomous AI co-agents.', 'Specialized')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">autonomous-ai-agents</span>
+                            <span onclick="showSkillModal('freecad', 'Parametric modeling and Python scripting.', 'Specialized')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">freecad</span>
+                            <span onclick="showSkillModal('minecraft-modpack-server', 'Host modded Minecraft servers.', 'Specialized')" class="skill px-3 py-1 bg-zinc-950 rounded-2xl hover:bg-zinc-800">minecraft-modpack-server</span>
                         </div>
                     </div>
 
                 </div>
                 
-                <div class="mt-6 pt-5 border-t border-zinc-800 text-xs text-zinc-500">
-                    Click any skill pill above. Full SKILL.md files live locally in <span class="command">~/.hermes/skills/</span>
+                <div class="mt-6 pt-5 border-t border-zinc-800 text-xs text-zinc-500 flex items-center gap-x-2">
+                    <i class="fa-solid fa-sync fa-fw"></i>
+                    <span>Run <span class="command text-zinc-400">hermes skills list</span> to refresh. Full SKILL.md files are local only.</span>
                 </div>
             </div>
         </div>
@@ -216,31 +257,19 @@
         function copyCommand() {
             const cmd = 'hermes skills inspect ' + document.getElementById('modalInspectName').textContent;
             navigator.clipboard.writeText(cmd).then(() => {
-                const original = event.currentTarget;
-                // simple feedback
                 const el = document.querySelector('#skillModal .command');
                 if (el) {
-                    el.style.background = '#166534';
+                    const original = el.innerHTML;
+                    el.innerHTML = 'Copied!';
                     setTimeout(() => {
-                        el.style.background = '#18181b';
-                    }, 800);
+                        el.innerHTML = original;
+                    }, 1200);
                 }
             });
         }
         
-        // Keyboard support
         document.addEventListener('keydown', function(e) {
             if (e.key === "Escape") hideModal();
-        });
-        
-        // Easter egg: press "?" to show a random skill
-        document.addEventListener('keypress', function(e) {
-            if (e.key === "?") {
-                const skills = document.querySelectorAll('.skill');
-                if (skills.length > 0) {
-                    skills[Math.floor(Math.random() * skills.length)].click();
-                }
-            }
         });
     </script>
 </body>
